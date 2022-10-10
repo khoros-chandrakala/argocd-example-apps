@@ -2,16 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
-# data:
-#   repositories: |
-#     - name: argocd-example-apps
-#       url: ssh://git@github.com:khoros-chandrakala/argocd-example-apps.git
-#       type: git
-#       insecure: true.                  // To skip verification
-#       insecureIgnoreHostKey: true      // to ignore host key for ssh
-#       sshPrivateKeySecret:
-#         name: private-repo-creds
-#         key: sshPrivateKey
 spec:
   replicas: 1
   revisionHistoryLimit: 3
